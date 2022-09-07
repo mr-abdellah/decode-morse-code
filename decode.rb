@@ -18,6 +18,7 @@ def decode_morise_word(word)
 
   ele
 end
+
 def decode_morise_message(message)
   ele = ''
   message = message.split('   ')
