@@ -10,7 +10,7 @@ def decode_char(char)
   morse_alphabet[char]
 end
 
-def decode_morise_word(word)
+def decode_morse_word(word)
   chars = word.split
   ele = ''
 
@@ -22,7 +22,7 @@ end
 def decode_morise_message(message)
   ele = ''
   message = message.split('   ')
-  message.each { |x| ele += "#{decode_morise_word(x)} " }
+  message.each { |x| ele += "#{decode_morse_word(x)} " }
   ele
 end
 
