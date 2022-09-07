@@ -18,3 +18,11 @@ def decode_morise_word(word)
 
   ele
 end
+def decode_morise_message(message)
+  ele = ''
+  message = message.split('   ')
+  message.each { |x| ele += "#{decode_morise_word(x)} " }
+  ele
+end
+
+decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
